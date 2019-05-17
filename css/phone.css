@@ -1,0 +1,76 @@
+/*头部开始 */
+.nav_item {
+     display: none;
+ }
+ .nav_item {
+     position: fixed;
+     z-index: 2;
+     top: 55px;
+
+ }
+ .nav_item li {
+     float: none;
+     background-color: #1C2327;
+ }
+ .nav_item li  a{
+      color: #fff;
+ }
+
+ .logo {
+     width: 150px;
+     margin: 0 auto;
+     float: none;
+     line-height: 50px;
+ }
+ .wrapper {
+     min-width: 375px;
+ }
+
+ input[type=checkbox] {
+     display: none;
+     font-size: 28px;
+ }
+ input[type=checkbox]:checked ~ .nav_item {
+     display: block;
+     background-color: red;
+ }
+ .menu {
+     position: relative;
+ }
+.menu:after {
+    content: '\e63f';
+    font-family: iconfont;
+    font-size: 32px;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+/*头部结束*/
+
+/*轮播图以及右侧开始*/
+.content_right, .tab_right {
+    display: none;
+}
+.content_left , .tab_left{
+    float:none;
+    margin: 0 auto;
+}
+/*轮播图及右侧结束*/
+ /*推荐栏开始*/
+.recommend {
+    margin: 20px auto;
+}
+/*推荐栏结束*/
+
+/*不规则侧边栏开始*/
+.norule_aside {
+    display: none;
+}
+/*大图片开始*/
+.img {
+    margin: 20px auto;
+}
+.main_content {
+    margin: 20px auto;
+}

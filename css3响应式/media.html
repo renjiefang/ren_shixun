@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrapper {
+            height: auto;
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        div[class='ren'] {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width: 768px) {
+            div[class='ren'] {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+                .wrapper {
+                    width: 800px;
+
+                }
+            div[class='ren'] {
+                   width: 50%;
+                background-color: mediumpurple;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+              .wrapper {
+                  width: 1000px;
+              }
+            div[class='ren']{
+                width: 25%;
+                background-color: darkgreen;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+               .wrapper {
+                   width: 1200px;
+               }
+            div[class='ren'] {
+                width: 16.6666%;
+                background-color: brown;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="ren">1</div>
+        <div class="ren">2</div>
+        <div class="ren">3</div>
+        <div class="ren">4</div>
+        <div class="ren">5</div>
+        <div class="ren">6</div>
+        <div class="ren">7</div>
+        <div class="ren">8</div>
+        <div class="ren">9</div>
+        <div class="ren">10</div>
+        <div class="ren">11</div>
+        <div class="ren">12</div>
+    </div>
+</body>
+</html>

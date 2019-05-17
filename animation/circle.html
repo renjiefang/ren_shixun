@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrapper {
+            width: 400px;
+            height: 400px;
+            background-color: #37474f;
+            margin: 200px auto;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .out,.middle,.in ,.sun{
+            width: 165px;
+            height: 165px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid #fff;
+            position: absolute;
+            animation: out 6s linear infinite;
+        }
+      .wrapper  .middle {
+          width: 120px;
+          height: 120px;
+          animation: middle 4s linear infinite;
+        }
+        .wrapper .in {
+            width: 90px;
+            height: 90px;
+            animation: in 2s linear infinite;
+        }
+       .wrapper .sun {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #ffab91;
+            border: none;
+            animation: sun 1s linear infinite;
+        }
+        .out .spot {
+            position: absolute;
+            top: 43px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #3ff9dc;
+
+        }
+        .middle .spot {
+            position: absolute;
+            top: 0px;
+            left: 26px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #3ff9dc;
+
+        }
+        .in .spot {
+            position: absolute;
+            top: 0px;
+            left: 60px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #3ff9dc;
+
+        }
+        @keyframes in {
+           0% {
+               transform: rotateZ(0);
+           }
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+        @keyframes out {
+            0% {
+                transform: rotateZ(0);
+            }
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+        @keyframes middle {
+            0% {
+                transform: rotateZ(0);
+            }
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+        @keyframes sun {
+            0% {
+                transform: rotateZ(0);
+            }
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+     <div class="wrapper">
+         <div class="out">
+             <div class="spot"></div>
+         </div>
+         <div class="middle">
+             <div class="spot"></div>
+         </div>
+         <div class="in">
+             <div class="spot"></div>
+         </div>
+         <div class="sun"></div>
+     </div>
+</body>
+</html>

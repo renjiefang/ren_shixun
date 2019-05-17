@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrapper {
+            width: 400px;
+            height: 400px;
+            background-color: #37474f;
+            border: 1px solid aquamarine;
+            margin: 200px auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .spot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #3ff9dc;
+
+        }
+        /*alternate表示奇数次正向运动，偶数次反向运动*/
+         /*forwards表示动画结束后，保持最后一帧的状态*/
+        .left {
+            animation: left .5s  linear infinite alternate;
+        }
+        .middle {
+            animation: middle .5s linear .2s infinite alternate;
+        }
+        .right {
+            animation: middle .5s linear .4s infinite alternate;
+        }
+        @keyframes middle {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: .25;
+                transform: scale(.75);
+            }
+        }
+        @keyframes left {
+             0% {
+                 opacity: 1;
+                 transform: scale(1);
+             }
+            100% {
+                opacity: .25;
+                transform: scale(.75);
+            }
+        }
+        @keyframes middle {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: .25;
+                transform: scale(.75);
+            }
+        }
+    </style>
+</head>
+<body>
+     <div class="wrapper">
+         <div class="spot left"></div>
+         <div class="spot middle"></div>
+         <div class="spot right"></div>
+     </div>
+</body>
+</html>

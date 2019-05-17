@@ -1,0 +1,24 @@
+.log_detail {
+    margin-top: 20px;
+    width: 75%;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.log_detail_content {
+    margin: 20px;
+    min-height: 500px;
+    background-color: red;
+}
+
+.log_detail_content h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: normal;
+}
+.content_title {
+    margin-top: 20px;
+    overflow: hidden;
+    color: #999;
+    line-height: 34px;
+}
