@@ -1,0 +1,33 @@
+.me {
+
+    min-height: 600px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #fff  url("http://jxhx2.yangqq.com/skin/jxhx/images/abbg.png") no-repeat top right;
+}
+.me .top {
+    padding: 50px 20px 50px;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+.me .top  img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float:left;
+}
+.me .top img {
+    float: left;
+}
+.me .top h3 {
+    margin: 10px 0 10px;
+    font-size: 18px;
+}
+.me .bottom p {
+    width: auto;
+    padding-bottom: 5px;
+    height: auto;
+    margin-left: 20px;
+    background: #fff url("http://jxhx2.yangqq.com/skin/jxhx/images/hline.png") no-repeat  60px -5px;
+    border-bottom: 1px dashed #ddd;
+}

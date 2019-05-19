@@ -690,12 +690,19 @@ li.li_focus {
 }
 .norule_aside ul li {
     padding: 0;
+    display: block;
+    width: 100%;
+}
+.norule_aside ul {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 .norule_aside .sidebar {
     min-height: 500px;
     background-color: #fff;
     border-radius: 5px;
-    width: 290px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -714,15 +721,16 @@ li.li_focus {
     opacity: .7;
 }
 .click_sort ul li {
-    width: 242px;
+    width: 98.4%;
     height: 30px;
     line-height: 30px;
     margin-bottom: 10px;
-    padding-left: 5px;
+    padding:0 5px ;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     background-color: #f6f6f6;
+    box-sizing: border-box;
 }
 .click_sort ul li:nth-child(2n+1) {
     background-color: #fff;
@@ -762,7 +770,7 @@ li.li_focus {
     padding: 0px;
     margin-bottom: 10px;
     height: 60px;
-    width: 242px;
+    width: 98.4%;
 
 }
 .zhanzhang_recommend ul li:hover  {
@@ -791,7 +799,7 @@ li.li_focus {
     min-height:auto;
 }
 .sidebar_img img {
-    width: 240px;
+    width: 96%;
     height: 180px;
     border-radius: 5px;
     margin: 0 auto;
@@ -806,6 +814,7 @@ li.li_focus {
 .sidebar_like ul, .sidebar_message ul {
     height: auto;
     padding: 15px;
+    box-sizing: border-box;
 }
 .sidebar_like ul li {
     line-height: 22px;
@@ -832,10 +841,10 @@ li.li_focus {
 /*站点信息开始*/
 .sidebar_message ul li {
     margin-bottom: 8px;
-    width:256px;
+    width: 98%;
 }
 .sidebar_message img {
-    width: 194px;
+    width: 96%;
     height: 194px;
     display: block;
     margin: 5px auto;

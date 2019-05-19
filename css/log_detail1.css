@@ -8,7 +8,7 @@
 .log_detail_content {
     margin: 20px;
     min-height: 500px;
-    background-color: red;
+    background: url("../image/3.jpg") no-repeat center;
 }
 
 .log_detail_content h2 {
