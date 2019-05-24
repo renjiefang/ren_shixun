@@ -5,6 +5,7 @@
 //搜索动画
 let oSearch = document.querySelector('.search');
 let oInput = document.querySelector('.input')
+let oToTop = document.querySelector('.toTop')
 var timer = null
 
 oSearch.onmouseenter = function () {
@@ -37,3 +38,18 @@ oSearch.onmouseleave = function () {
 //         }
 //
 //     }
+
+//回到顶部
+document.onscroll = function() {
+
+        let height = document.body.scrollTop ||document.documentElement.scrollTop;
+
+         if(height > 400) {
+              oToTop.style.display = 'block'
+         }else {
+             oToTop.style.display = 'none'
+         }
+}
+oToTop.onclick = function() {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+}

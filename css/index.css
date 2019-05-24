@@ -1,4 +1,4 @@
-
+@import "./reset.css";
 /*轮播图及右侧开始*/
    .content {
        height: 260px;
@@ -619,6 +619,7 @@ li.li_focus {
     border-radius: 5px;
 }
 
+
 .main_list_item p {
     width: 70%;
     float: right;
@@ -848,6 +849,53 @@ li.li_focus {
     height: 194px;
     display: block;
     margin: 5px auto;
+}
+
+/*页面底部*/
+
+footer {
+    height: 100px;
+    background: #373D41;
+    margin-top: 40px;
+    width: 100%;
+    border-top: #00C1DE 10px solid;
+    padding: 30px 0;
+    color: #73777a;
+    font-size: 14px;
+    position: relative;
+}
+
+
+.toTop {
+       display: none;
+       position: fixed;
+       bottom: 50px;
+       right: 10px;
+       background-color: #333;
+       width: 40px;
+        height: 40px;
+}
+.toTop:after {
+    font-family: iconfont;
+    content: '\e62c';
+     display: inline-block;
+     color: #fff;
+     width: 10px;
+     height: 10px;
+     position: absolute;
+     left: 10px;
+     top: 8px;
+}
+footer .linkmore {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+}
+footer .linkmore li {
+    width: 60px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
 }
 
 
