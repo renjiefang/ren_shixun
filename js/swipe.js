@@ -76,10 +76,13 @@ swipe.onmouseout();
 
 function changeImg(){
     for(var i=0;i<len;i++){
-        pics[i].style.display='none';
+       // pics[i].style.display='none';
+        pics[i].style.opacity= '0';
+
         round[i].className="";
     }
-    pics[index].style.display='block';
+   // pics[index].style.display='block';
+    pics[index].style.opacity=' 1';
     round[index].className="spot_focus";
 }
 

@@ -53,3 +53,47 @@ document.onscroll = function() {
 oToTop.onclick = function() {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
+
+//tab
+ let  ojs = document.querySelector('.js_test')
+let   oli = ojs.getElementsByTagName('li')
+let oti = document.querySelector('.tab_title')
+let tab_content = document.querySelectorAll('.tab_content')
+let  tab_left = document.querySelector('.tab_left')
+
+
+  ojs.onmouseenter = function(e) {
+           console.log(e);
+      for (let i = 0; i < oli.length; i++) {
+            oli[0].className = ''
+          oli[i].onmouseover = function () {
+              this.className = 'tab_focus'
+              for(let i = 0; i < tab_content.length; i++) {
+                   tab_content[i].style.display = 'none'
+              }
+                tab_content[i].style.display = 'block'
+
+          }
+          oli[i].onmouseleave = function() {
+              this.className = ''
+               tab_content[i].onmouseover = function() {
+                      oli[i].className = 'tab_focus'
+               }
+              tab_content[i].onmouseleave = function() {
+                  for (let i = 0; i < oli.length; i++) {
+                      oli[i].className = ''
+                  }
+              }
+          }
+      }
+  }
+  tab_left.onmouseleave = function() {
+    for(let i = 0; i <oli.length; i++) {
+        oli[i].className = ''
+    }
+      for(let i = 0; i < tab_content.length; i++) {
+          tab_content[i].style.display = 'none'
+      }
+      tab_content[0].style.display = 'block'
+      oli[0].className = 'tab_focus'
+  }

@@ -104,6 +104,8 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 999;
+
 }
 .swipe .spot .spot_focus {
     background-color: #12B7DE;
@@ -115,22 +117,35 @@
     line-height: 10px;
     background-color: #fff;
     margin-right: 12px;
+    padding: 0;
+
 }
 
 .swipe ul {
     height: 260px;
 }
-.swipe ul li {
-    float: left;
+.swipe ul .swipe_item {
+    /*float: left;*/
+    width:660px;
+    position: absolute;
     height: 260px;
     padding: 0;
+    z-index: 0;
+    /*transition: all 1s ease;*/
+
+    /*移动添加样式*/
+    top: 0;
+    left: 660px;
+}
+.swipe ul .swipe_item:nth-child(1) {
+    left:0;
 }
 .swipe img {
-    width: 132%;
+    width: 660px;
     height: 260px;
 }
 .swipe .swipe_3{
-     width: 108%;
+     /*width: 108%;*/
 }
 .swipe_arrow {
     position: absolute;
@@ -301,6 +316,18 @@
     transition: all .8s ease;
     position:relative;
 }
+
+ .tab_content:nth-child(2) .tab_content_img .top, .tab_content:nth-child(2) .tab_content_img .bottom {
+     background: url("http://jxhx2.yangqq.com/skin/jxhx/images/h1.jpg") no-repeat;
+ }
+
+.tab_content:nth-child(3) .tab_content_img .top,.tab_content:nth-child(3) .tab_content_img .bottom {
+    background: url("http://jxhx2.yangqq.com/skin/jxhx/images/h2.jpg") no-repeat;
+}
+.tab_content:nth-child(4) .tab_content_img .top {
+    background: url("http://www.yangqq.com/d/file/jstt/web/2018-10-16/56c49531df63eec5ccc3840e68f3ac21.png") no-repeat;
+}
+
 
 .tab_content_img .top:hover , .tab_content_img .bottom:hover{
     transform: scale(1.1);
@@ -609,12 +636,14 @@ li.li_focus {
     color: #F00;
 }
 .main_list_item {
+    height: 130px;
     margin-top: 15px ;
     overflow:hidden;
     position: relative;
 }
 .main_list_item img {
     width: 22.2%;
+    height: 96px;
     float:left;
     border-radius: 5px;
 }
