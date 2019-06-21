@@ -126,13 +126,13 @@
 }
 .swipe ul .swipe_item {
     /*float: left;*/
-    width:660px;
+    width:662px;
     position: absolute;
     height: 260px;
     padding: 0;
     z-index: 0;
     /*transition: all 1s ease;*/
-
+    background-color: #333;
     /*移动添加样式*/
     top: 0;
     left: 660px;
@@ -141,7 +141,7 @@
     left:0;
 }
 .swipe img {
-    width: 660px;
+    width: 662px;
     height: 260px;
 }
 .swipe .swipe_3{
@@ -925,6 +925,19 @@ footer .linkmore li {
     height: 80px;
     margin-right: 20px;
     border-radius: 50%;
+}
+.up_down  li{
+    display: block;
+    float:none;
+    color: #fff;
+    font-size: 12px;
+   
+}
+.up_down {
+    position:absolute;
+    z-index:9999;
+    background-color: #1C2327;
+    height: 150px;
 }
 
 

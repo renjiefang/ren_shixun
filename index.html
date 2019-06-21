@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/common.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <link rel="stylesheet" media="(max-width: 800px)" href="./css/phone.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1127180_7rm8p13m5gn.css">
+    <!--<link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">-->
 </head>
 <body>
   <!--头部start-->
@@ -16,13 +20,20 @@
     <header>
         <nav class="nav wrapper">
             <input type="checkbox" name="" id="more" >
-            <div class="logo"><img src="https://www.baidu.com/img/dong_28db0e2033ff1faf14771bc40ad0a9cd.gif" width="270" height="50" alt=""></div>
+            <div class="logo">任米米个人博客</div>
         <ul class="nav_item">
 
             <li class="nav_item_focus"><a href="" >首页</a></li>
             <li><a href="me.html">关于我</a></li>
             <li><a href="trail.html">时间轴</a></li>
-            <li><a href="log.html">博客日记</a></li>
+            <li style="position:relative;"><a href="log.html">博客日记</a>
+                <span class="iconfont renarrow3" style="color: #12b7de"></span>
+                <ul class="up_down" style="display:none;">
+                    <li>最近博客</li>
+                    <li>历史博客</li>
+                    <li>特色博客</li>
+                </ul>
+            </li>
             <li><a href="remark.html">留言</a></li>
         </ul>
             <div class="search iconfont"><input type="text" placeholder="请输入内容" class="input"></div>
@@ -602,7 +613,7 @@
               <li>
                   <a href="#" target="_blank" class="ding">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a>
                   <div class="main_list_item">
-                      <img  lazy="http://www.yangqq.com/d/file/news/life/2018-06-29/75842f4d1e18d692a66c38eb172a40ab.jpg" class="lazyload" alt="">
+                      <img class="lazy" data-original="http://www.yangqq.com/d/file/news/life/2018-06-29/75842f4d1e18d692a66c38eb172a40ab.jpg"   class="lazyload" alt="">
                        <div >
                        <p>就拿我自己来说吧，有时候会很矛盾，设计好的作品，不把它分享出来，会觉得待在自己电脑里面实在是没有意义。干脆就发布出去吧。我也害怕收到大家不好的评论，有些评论，可能说者无意，但是对于每一个用心的站长来说，都会受很深 </p>
                        </div>
@@ -618,7 +629,7 @@
               <li>
                   <a href="#" target="_blank" class="ding">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a>
                   <div class="main_list_item">
-                      <img   lazy="http://www.yangqq.com/d/file/blogs/2018-06-11/372b79556c82ac59a8c46eda53f177c4.jpg" class="lazyload" alt="">
+                      <img  class="lazy" data-original="http://www.yangqq.com/d/file/blogs/2018-06-11/372b79556c82ac59a8c46eda53f177c4.jpg"    class="lazyload" alt="">
                       <div >
                           <p>就拿我自己来说吧，有时候会很矛盾，设计好的作品，不把它分享出来，会觉得待在自己电脑里面实在是没有意义。干脆就发布出去吧。我也害怕收到大家不好的评论，有些评论，可能说者无意，但是对于每一个用心的站长来说，都会受很深 </p>
                       </div>
@@ -635,7 +646,7 @@
               <li>
                   <a href="#" target="_blank" class="ding">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a>
                   <div class="main_list_item">
-                      <img  lazy="http://www.yangqq.com/d/file/jstt/web/2018-11-03/e3d39beb4e61d8545d6fbda2dc7a4b71.png"  class="lazyload" alt="">
+                      <img class="lazy" data-original="http://www.yangqq.com/d/file/jstt/web/2018-11-03/e3d39beb4e61d8545d6fbda2dc7a4b71.png"    class="lazyload" alt="">
                       <div >
                           <p>就拿我自己来说吧，有时候会很矛盾，设计好的作品，不把它分享出来，会觉得待在自己电脑里面实在是没有意义。干脆就发布出去吧。 </p>
                       </div>
@@ -651,7 +662,7 @@
               <li>
                   <a href="#" target="_blank" class="ding">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a>
                   <div class="main_list_item">
-                      <img  lazy="http://jxhx2.yangqq.com/skin/jxhx/images/b02.jpg" alt="" class="lazyload">
+                      <img  class="lazy" data-original="http://jxhx2.yangqq.com/skin/jxhx/images/b02.jpg"   alt="" class="lazyload">
                       <div >
                           <p>就拿我自己来说吧，有时候会很矛盾，设计好的作品，不把它分享出来，会觉得待在自己电脑里面实在是没有意义。干脆就发布出去吧。我也害怕收到大家不好的评论，有些评论，可能说者无意，但是对于每一个用心的站长来说，都会受很深 </p>
                       </div>
@@ -667,7 +678,7 @@
               <li>
                   <a href="#" target="_blank" class="ding">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a>
                   <div class="main_list_item">
-                      <img  lazy="http://jxhx2.yangqq.com/skin/jxhx/images/b03.jpg" alt="" class="lazyload">
+                      <img  class="lazy" data-original="http://jxhx2.yangqq.com/skin/jxhx/images/b03.jpg" alt="" class="lazyload">
                       <div >
                           <p>就拿我自己来说吧，有时候会很矛盾，设计好的作品，不把它分享出来，会觉得待在自己电脑里面实在是没有意义。干脆就发布出去吧。我也害怕收到大家不好的评论，有些评论，可能说者无意，但是对于每一个用心的站长来说，都会受很深 </p>
                       </div>
@@ -683,7 +694,7 @@
               <li>
                   <a href="#" target="_blank" class="ding">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a>
                   <div class="main_list_item">
-                      <img  lazy="http://www.yangqq.com/d/file/news/life/2018-06-29/75842f4d1e18d692a66c38eb172a40ab.jpg" alt="" class="lazyload">
+                      <img  class="lazy" data-original="http://www.yangqq.com/d/file/news/life/2018-06-29/75842f4d1e18d692a66c38eb172a40ab.jpg"   alt="" class="lazyload">
                       <div >
                           <p>就拿我自己来说吧，有时候会很矛盾，设计好的作品，不把它分享出来，会觉得待在自己电脑里面实在是没有意义。干脆就发布出去吧。我也害怕收到大家不好的评论，有些评论，可能说者无意，但是对于每一个用心的站长来说，都会受很深 </p>
                       </div>
@@ -699,7 +710,7 @@
               <li>
                   <a href="#" target="_blank" class="ding">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a>
                   <div class="main_list_item">
-                      <img  lazy="http://www.yangqq.com/d/file/news/life/2018-06-29/75842f4d1e18d692a66c38eb172a40ab.jpg" alt="" class="lazyload">
+                      <img  class="lazy" data-original="http://www.yangqq.com/d/file/news/life/2018-06-29/75842f4d1e18d692a66c38eb172a40ab.jpg" alt="" class="lazyload">
                       <div >
                           <p>就拿我自己来说吧，有时候会很矛盾，设计好的作品，不把它分享出来，会觉得待在自己电脑里面实在是没有意义。干脆就发布出去吧。我也害怕收到大家不好的评论，有些评论，可能说者无意，但是对于每一个用心的站长来说，都会受很深 </p>
                       </div>
@@ -715,7 +726,7 @@
               <li>
                   <a href="#" target="_blank" class="ding">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a>
                   <div class="main_list_item">
-                      <img  lazy="http://www.yangqq.com/d/file/jstt/web/2018-11-03/e3d39beb4e61d8545d6fbda2dc7a4b71.png" alt="" class="lazyload">
+                      <img  class="lazy" data-original="http://www.yangqq.com/d/file/jstt/web/2018-11-03/e3d39beb4e61d8545d6fbda2dc7a4b71.png"  alt="" class="lazyload">
                       <div >
                           <p>就拿我自己来说吧，有时候会很矛盾，设计好的作品，不把它分享出来，会觉得待在自己电脑里面实在是没有意义。干脆就发布出去吧。我也害怕收到大家不好的评论，有些评论，可能说者无意，但是对于每一个用心的站长来说，都会受很深 </p>
                       </div>
@@ -731,7 +742,7 @@
               <li>
                   <a href="#" target="_blank" class="ding">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a>
                   <div class="main_list_item">
-                      <img   lazy="http://www.yangqq.com/d/file/blogs/2018-06-11/372b79556c82ac59a8c46eda53f177c4.jpg" alt="" class="lazyload">
+                      <img   class="lazy" data-original="http://www.yangqq.com/d/file/blogs/2018-06-11/372b79556c82ac59a8c46eda53f177c4.jpg"   alt="" class="lazyload">
                       <div >
                           <p>就拿我自己来说吧，有时候会很矛盾，设计好的作品，不把它分享出来，会觉得待在自己电脑里面实在是没有意义。干脆就发布出去吧。我也害怕收到大家不好的评论，有些评论，可能说者无意，但是对于每一个用心的站长来说，都会受很深 </p>
                       </div>
@@ -766,9 +777,11 @@
 
 
   <script src="js/index.js"></script>
-  <script src="js/move.js"></script>
+  <script src="js/Jq.js"></script>
+  <!--<script src="js/move.js"></script>-->
   <script src="js/animate.js"></script>
-  <script src="js/lazyload.js"></script>
+  <script src="js/lazy.js"></script>
+  <!--<script src="js/lazyload.js"></script>-->
   <!--<script src="js/swipe.js"></script>-->
   <script src="js/change.js"></script>
 </body>

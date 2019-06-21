@@ -97,3 +97,17 @@ let  tab_left = document.querySelector('.tab_left')
       tab_content[0].style.display = 'block'
       oli[0].className = 'tab_focus'
   }
+
+
+    let renarrow3 = document.querySelector('.renarrow3')
+    let up_down = document.querySelector('.up_down')
+    let flag = true;
+    renarrow3.onclick = function () {
+        flag = !flag;
+        if(!flag) {
+            up_down.style.display ='block'
+        }else {
+            up_down.style.display ='none'
+        }
+
+    }
